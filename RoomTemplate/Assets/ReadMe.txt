@@ -1,4 +1,4 @@
-Add all of your assets to this folder. Then export this folder as a unity package. Right-click "Export-Package" and select this folder. 
+Add all of your assets to this folder EXPORTTOAARON_NAME. Then export that folder as a unity package. Right-click "Export-Package" and select this folder. 
 -Export all of your selectable objects with scripts. 
 -Export your room with everything needed. materials, lights, audio files etc...
 -If you want Post Processing you can modify the Post Processing profile. Be sure to give it a unique name "PostProc_ROOM NAME" 

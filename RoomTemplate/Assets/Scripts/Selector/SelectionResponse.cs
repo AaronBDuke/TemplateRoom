@@ -13,18 +13,20 @@ public class SelectionResponse : MonoBehaviour, ISelectionResponse
     public static Transform currentSelection;
     
 
+    
     public void OnHover(Transform selection)
     {
         currentSelection = selection;
-        selection.gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        selection.GetComponent<Outline>().OutlineWidth = 10;
         CheckForInput(currentSelection);
 
     }
 
     public void OnDeselect(Transform selection)
     {
-        selection.gameObject.GetComponent<Renderer>().material.color= Color.red;
        // currentSelection = null;
+       selection.GetComponent<Outline>().OutlineWidth = 0;
+
 
     }
 
